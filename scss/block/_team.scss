@@ -1,0 +1,59 @@
+#team__section {
+  background-color: #181F2B;
+}
+
+.team {
+  color: white;
+  position: relative;
+}
+
+.team__list {
+  margin: 0px;
+  padding: 160px 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__list-img{
+  position: absolute;
+  top: 90px;
+  left: -15px;
+}
+
+.team__item {
+  padding: 25px;
+  padding-top: 40px;
+  width: 32%;
+  border-radius: 5px;
+  background-color: #202A3C;
+  position: static;
+  z-index: 2;
+}
+
+.team__text {
+  font-size: 14px;
+  line-height: 21px;
+  opacity: .8;
+}
+
+.team__img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.team__box {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.team__box-title {
+  font-size: 14px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
+
+.team__box-subtitle {
+  font-size: 10px;
+  line-height: 12px;
+}

@@ -1,0 +1,48 @@
+#input__section {
+  background: linear-gradient(rgba(24, 31, 43, 1) 50%, rgba(11, 21, 36, 1) 50%);
+}
+
+.input {
+  padding: 42px 77px;
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  background-color: #1B2330;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  border-radius: 9px;
+  color: white;
+  text-align: center;
+}
+
+.input__title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.input__text{
+  width: 80%;
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: .8;
+}
+
+.input__form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__email{
+  padding: 17px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #1B2330;
+  outline: none;
+  width: 60%;
+}
+
+.input__email:focus::placeholder{
+  opacity: 0;
+}

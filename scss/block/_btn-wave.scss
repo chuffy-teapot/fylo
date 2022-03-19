@@ -1,0 +1,110 @@
+.hero__btn {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  width: 280px;
+  height: 56px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 0 25px 25px;
+  background-image: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease;
+  user-select: none;
+}
+
+.hero__btn:hover {
+  color: black;
+  border-radius: 25px;
+  border-color: aqua;
+  transform: scale(1.1);
+}
+
+.hero__btn:active .name {
+  transform: scale(1);
+}
+
+.btn__name {
+  position: absolute;
+  z-index: 2;
+}
+
+.wave__color{
+  width: 780px;
+  height: 780px;
+  background-color: #1B2330;
+  border-radius: 45% 43% 45% 43%;
+  position: absolute;
+  left: -90%;
+  top: -755px;
+  animation: waves 7s infinite linear;
+  transition: all 3s ease;
+}
+
+.wave__color-small{
+  width: 800px;
+  height: 800px;
+  background-color: #1B2330;
+  opacity: .7;
+  border-radius: 43% 45% 43% 45%;
+  position: absolute;
+  left: -95%;
+  top: -765px;
+  animation: waves 7s infinite linear;
+  transition: all 3s ease;
+}
+
+.btn__wave {
+  width: 780px;
+  height: 780px;
+  background-color: #181F2B;
+  border-radius: 45% 43% 45% 43%;
+  position: absolute;
+  left: -90%;
+  top: -755px;
+  animation: waves 7s infinite linear;
+  transition: all 3s ease;
+}
+
+.btn__wave-small {
+  width: 800px;
+  height: 800px;
+  background-color: #181F2B;
+  opacity: .7;
+  border-radius: 43% 45% 43% 45%;
+  position: absolute;
+  left: -95%;
+  top: -765px;
+  animation: waves 7s infinite linear;
+  transition: all 3s ease;
+}
+
+.hero__btn:hover .btn__wave {
+  top: -900px;
+}
+
+.hero__btn:hover .btn__wave-small {
+  top: -900px;
+}
+
+@keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
