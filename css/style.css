@@ -547,6 +547,26 @@ header {
   width: 60%;
 }
 
+.input__email::-webkit-input-placeholder {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.input__email:-ms-input-placeholder {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.input__email::-ms-input-placeholder {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.input__email::placeholder {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 .input__email:focus::-webkit-input-placeholder {
   opacity: 0;
 }

@@ -43,6 +43,10 @@
   width: 60%;
 }
 
+.input__email::placeholder{
+  transition: all .5s ease;
+}
+
 .input__email:focus::placeholder{
   opacity: 0;
 }
