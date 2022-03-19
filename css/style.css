@@ -543,6 +543,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .box__link-text::before {
