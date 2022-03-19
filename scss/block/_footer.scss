@@ -39,6 +39,7 @@ footer{
 .footer__item{
   display: flex;
   align-items: center;
+  transition: all .7s ease;
   margin-bottom: 10px;
 }
 
@@ -47,9 +48,16 @@ footer{
   text-decoration: none;
   color: white;
   opacity: .6;
+  transition: all .7s ease;
 }
 
-.footer__link:hover{
+.footer__item:hover .footer__link{
+  color: #63E1D9;
+  opacity: 1;
+}
+
+.footer__item:hover{
+  opacity: 1;
   color: #63E1D9;
 }
 
@@ -68,6 +76,7 @@ footer{
 
 .footer__icon-item{
   color: white;
+  transition: all .7s ease;
 }
 
 .footer__icon-item:hover{

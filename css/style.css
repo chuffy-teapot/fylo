@@ -224,7 +224,15 @@ header {
   top: -900px;
 }
 
+.hero__btn:hover .wave__color {
+  top: -900px;
+}
+
 .hero__btn:hover .btn__wave-small {
+  top: -900px;
+}
+
+.hero__btn:hover .wave__color-small {
   top: -900px;
 }
 
@@ -604,6 +612,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
   margin-bottom: 10px;
 }
 
@@ -611,11 +621,19 @@ footer {
   margin-left: 10px;
   text-decoration: none;
   color: white;
-  opacity: .7;
+  opacity: .6;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
-.footer__link:hover {
+.footer__item:hover .footer__link {
+  color: #63E1D9;
   opacity: 1;
+}
+
+.footer__item:hover {
+  opacity: 1;
+  color: #63E1D9;
 }
 
 .footer__icon-list {
@@ -635,6 +653,8 @@ footer {
 
 .footer__icon-item {
   color: white;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .footer__icon-item:hover {
