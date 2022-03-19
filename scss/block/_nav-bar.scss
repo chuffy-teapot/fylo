@@ -63,12 +63,15 @@ header{
 
 .nav__link:hover{
   opacity: 1;
+  color: #63E1D9;
 }
 
 .nav__item:hover .nav__link::after{
   width: 50%;
+  background-color: #63E1D9;
 }
 
 .nav__item:hover .nav__link::before{
+  background-color: #63E1D9;
   width: 50%;
 }
