@@ -13,6 +13,7 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .team__list-img{
@@ -56,4 +57,29 @@
 .team__box-subtitle {
   font-size: 10px;
   line-height: 12px;
+}
+
+@media (max-width:870px){
+  .team__list {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    justify-content: space-evenly;
+  }
+
+  .team__item{
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .team__list-img{
+    top: -38px;
+    left: 20px;
+  }
+}
+
+@media (max-width:550px) {
+  .team__item{
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }

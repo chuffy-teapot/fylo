@@ -102,7 +102,8 @@
           <!--------------------------------------------------  features list  --------------------------------------------------->
 
           <div class="features__box">
-            <img src="./img/features-bg.png" width="615" height="464" alt="features">
+            <img class="features__box-img" src="./img/features-bg.png" width="615" height="464" alt="features">
+
             <div class="features__box-inner">
               <h3 class="box__title">Stay productive,
                 wherever you are</h3>
@@ -118,7 +119,6 @@
                 <p class="box__link-text">See how Fylo works</p>
                 <ion-icon class="box__link-icon" name="arrow-forward-circle"></ion-icon>
               </a>
-
             </div>
           </div>
           <!--------------------------------------------------  features__box  --------------------------------------------------->
@@ -191,7 +191,7 @@
 
           <form class="input__form" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
             <input class="input__email" placeholder="email@example.com" type="email" required>
-            <button type="submit" class="hero__btn">
+            <button type="submit" class="input__btn">
               <span class="btn__name">Get Started For Free</span>
               <span class="wave__color"></span>
               <span class="wave__color-small"></span>
@@ -200,6 +200,7 @@
         </div>
       </div><!-- container -->
     </section>
+    <!--------------------------------------------------  input  --------------------------------------------------->
   </main>
 
   <footer>
@@ -207,7 +208,9 @@
       <div class="footer">
 
         <div class="footer__title">
-          <img class="footer__logo" src="./img/logo.svg" width="176" height="52" alt="logo">
+          <a class="footer__logo-link" href="index.html">
+            <img class="footer__logo" src="./img/logo.svg" width="176" height="52" alt="logo">
+          </a>
           <ion-icon class="footer__icon" name="location-sharp"></ion-icon>
           <p class="footer__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -215,7 +218,7 @@
           </p>
         </div>
 
-        <ul class="footer__list">
+        <ul class="footer__list list-width">
           <li class="footer__item">
             <ion-icon name="call"></ion-icon>
             <a href="" class="footer__link">+1-543-123-4567</a>

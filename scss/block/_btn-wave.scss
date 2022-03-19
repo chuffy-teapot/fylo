@@ -21,6 +21,29 @@
   user-select: none;
 }
 
+.input__btn{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  width: 280px;
+  height: 56px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 0 25px 25px;
+  background-image: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease;
+  user-select: none;
+}
+
 .hero__btn:hover {
   color: black;
   border-radius: 25px;
@@ -28,7 +51,17 @@
   transform: scale(1.1);
 }
 
+.input__btn:hover{
+  color: black;
+  border-radius: 25px;
+  border-color: aqua;
+}
+
 .hero__btn:active .name {
+  transform: scale(1);
+}
+
+.input__btn:active .name {
   transform: scale(1);
 }
 
@@ -91,7 +124,7 @@
   top: -900px;
 }
 
-.hero__btn:hover .wave__color {
+.input__btn:hover .wave__color {
   top: -900px;
 }
 
@@ -99,9 +132,11 @@
   top: -900px;
 }
 
-.hero__btn:hover .wave__color-small {
+.input__btn:hover .wave__color-small {
   top: -900px;
 }
+
+
 
 @keyframes waves {
   0% {
@@ -114,5 +149,26 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width:550px) {
+  .input__btn{
+    width: 240px;
+  }
+
+  .wave__color{
+    left: -110%;
+    top: -755px;
+  }
+  
+  .wave__color-small{
+    left: -120%;
+    top: -765px;
+  }
+
+  .btn__name {
+    font-size: 16px;
   }
 }

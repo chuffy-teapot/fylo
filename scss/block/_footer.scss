@@ -11,7 +11,13 @@ footer{
   color: white;
 }
 
+.footer__logo-link{
+  text-decoration: none;
+  display: inline-block;
+}
+
 .footer__logo{
+  display: block;
   position: absolute;
   top: -100%;
 }
@@ -81,4 +87,83 @@ footer{
 
 .footer__icon-item:hover{
   color: #63E1D9;
+}
+
+
+@media (max-width:870px) {
+  .footer__logo{
+    top: -50%;
+  }
+
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer__title{
+    width: 50%;
+  }
+
+  .footer__item:last-child{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:550px) {
+  footer{
+    padding: 84px 0px;
+    padding-bottom: 170px;
+  }
+
+  .footer__logo{
+    top: -210px;
+    width: 80px;
+    height: auto;
+  }
+
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .list-width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .list-width a{
+    margin-left: 5px;
+  }
+
+  .footer__title{
+    width: 100%;
+    margin: 20px 0px;
+    position: absolute;
+    bottom: -120px;
+  }
+
+  .footer__link{
+    margin: 0;
+  }
+  
+  .footer__item:last-child{
+    margin-bottom: 20px;
+  }
+
+  .icon__item{
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .footer__text{
+    opacity: .6;
+    font-size: 16px;
+  }
 }

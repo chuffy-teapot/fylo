@@ -1,4 +1,7 @@
 #site-hero__section{
+  width: 100%;
+  padding: 20px 0px;
+  height: 100%;
   background-color: #1B2330;
   background-image: url("../../img/site-hero-bg.png");
   background-position: bottom -100px left 0px;
@@ -9,6 +12,11 @@
 .site-hero{
   text-align: center;
   color: white;
+  position: relative;
+}
+
+.hero__img{
+  user-select: none;
 }
 
 .hero__title{
@@ -26,4 +34,52 @@
   line-height: 30px;
   width: 50%;
   margin: 32px auto;
+}
+
+@media (max-width:870px) {
+  #site-hero__section{
+    background-position: bottom 0px left 0px;
+    background-size: contain;
+  }
+
+  .hero__img{
+    width: 70%;
+    height: auto;
+  }
+
+  .hero__title{
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hero__subtitle{
+    width: 70%;
+  }
+}
+
+@media (max-width:550px) {
+  #site-hero__section{    
+    background-position: bottom 0px left -50px;
+    background-size: 600px 200px;
+  }
+
+  .hero__img{
+    width: 80%;
+    height: auto;
+  }
+
+  .hero__title{
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .hero__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin: 22px 0;
+  }
 }
